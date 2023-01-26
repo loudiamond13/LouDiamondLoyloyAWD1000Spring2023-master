@@ -1,0 +1,99 @@
+
+/* This is my css for HOT number 2*/
+/**{
+    box-sizing: border-box;
+}*/
+
+/* HEADER SETTINGS*/
+header {
+    margin: 0;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: #ffe7c7;
+    color: black;
+}
+
+header a{
+    color: rgb(0, 0, 0);
+    
+}
+/* body settings  */
+body {
+    background-image: url("../css/images/greatWall_background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* main settings */
+.main_section {
+    width: 100%;
+    text-align: center;
+    color: #fdee73;
+    font-size: 1.5em;
+}
+.main_section h2{
+    font-size: 20vh;
+}
+
+.main_section a {
+    color: #fdee73;
+}
+
+/* food menu settings */
+.food_menu ul {
+    list-style-type: none;
+    color: black;
+}
+
+
+.container {
+    padding: 5px;
+    min-height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.col {
+    float: left;
+    position: relative;
+    padding: 5px;
+}
+
+
+
+.col-5 {
+    width: 19%;
+}
+
+.card {
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 10px;
+    background-image: linear-gradient(#ffe7c7,#fdee73);
+    text-align: center;
+}
+
+/* MAP SETTINGS*/
+.map {
+    text-align: center;
+    margin: 300px;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 50%;
+    border-radius: 50px;
+    color: black;
+    background-color: #ffe7c7;
+    box-sizing: border-box;
+}
+
+/* FOOTER SETTINGS */
+
+footer {
+    color: white;
+    background-color: brown;
+    text-align: center;
+    padding: 5px;
+}
