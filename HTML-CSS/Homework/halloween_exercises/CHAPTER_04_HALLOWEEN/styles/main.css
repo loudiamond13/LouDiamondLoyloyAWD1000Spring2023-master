@@ -1,0 +1,50 @@
+/* THIS IS THE CSS SETTINGS OF MY HALLOWEEN WEBSITE */
+* {
+    font-family: sans-serif;
+}
+
+/* HEADER SETTINGS */
+
+header {
+    
+}
+header img {
+    float: left;
+    margin-right: 20px;
+}
+
+header h2{
+    font-size: 2.5em;
+    font-style: italic;
+    color: orange;
+    text-shadow: 2px 2px black;
+}
+
+header h3{
+    padding-left: 110px;
+    font-size: 1.5em;
+}
+
+
+/* MAIN SETTINGS */
+
+main h1::first-letter {
+    font-size: 200%;
+}
+
+ul li a {
+    color:orange;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: green;
+}
+
+/* FOOTER SETTINGS */
+
+footer {
+    text-align: center;
+    font-size: .9em;
+}
+
