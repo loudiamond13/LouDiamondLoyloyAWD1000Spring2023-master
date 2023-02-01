@@ -3,7 +3,7 @@ body{
     
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    width: 900px;
+    width: 1200px;
     border: 3px solid steelblue;
     box-shadow: 0 9px 18px 9px black;
     margin: 0 auto;
@@ -13,9 +13,37 @@ section, aside {
     padding: 20px;
 }
 
+section {
+    width: 550px;
+    float: left;
+    padding: 25px 30px;
+    margin-left: 20px;
+}
+
+.aside1 {
+    float: left;
+    
+    padding: 25px 0 0 30px;
+    margin-top: 20px;
+}
+
+.aside1 h2{
+    color: red;
+}
+
+.aside1 ul {
+    line-height: 2em;
+    font-weight: bold;
+}
+
+.aside2 h2{
+    color: red;
+    margin-top: 40px;
+   
+}
 
 
-img  {
+header img  {
     float: left;
 }
 
@@ -28,7 +56,14 @@ h1 {
 }
 
 a.class1{color: red;}
-a.class2{color: aqua;}
+a.class2{color: steelblue;}
+
+
+
+
+
+
+
 
 
 header{
@@ -43,7 +78,7 @@ footer{
     background-color: steelblue;
     padding: 2px;
     text-align: center;
-    
+    clear: both;
     color: white;
 
 }
