@@ -1,0 +1,224 @@
+/* This is my css for my shape up */
+
+
+/* HEADER SETTINGS */
+
+header img  
+{
+    float: left;
+    margin-right: 1.875em;
+}
+
+header h1, h2 
+{
+    margin: 0;
+    padding: 0;
+}
+
+header h1 
+{
+    
+     color: steelblue;
+     font-style: italic;
+     text-shadow: 2px 2px 2px;
+     margin-bottom: 0.625em;
+     font-size: 3em;
+}
+header h2 
+{
+    font-size: 1.7em;
+}
+
+
+header
+{
+    background-image: -webkit-linear-gradient(180deg, white, rgb(117, 184, 239));
+    background-image: -moz-linear-gradient(180deg, white, rgb(117, 184, 239));
+    background-image: -o-linear-gradient(180deg, white, rgb(117, 184, 239));
+    background-image: linear-gradient(180deg, white, rgb(117, 184, 239));
+    padding: 3.125em;
+   
+}
+
+/* Nav Settings */
+nav
+ {
+    border: 0.125em solid steelblue;
+    background-color: steelblue;
+    
+    
+    
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav ul li
+{
+    
+    margin-left: 1.875em;
+    position: relative;
+    padding: 0em 1.875em 0em 1.875em;
+    display: inline-block;
+    
+}
+
+
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover
+{
+    background-color: lightblue;
+    
+    padding: 0.625em 0em 0.625em 0em;
+    
+}
+
+/*---------------------------------------*/
+
+.subnav ul
+{
+    
+    background-color: steelblue;
+    text-align: center;
+    display: none;
+    position: absolute;
+    width: 108%;
+    left: -1.5625em;
+   
+    
+}
+
+.subnav ul li 
+{
+    
+    line-height: 2.5em;
+    margin-left: -3.125em;
+    margin-bottom: 0.9375em;
+    
+}
+
+.subnav ul li a 
+{
+    
+    color: white;
+    
+}
+
+
+.subnav:hover ul
+{
+    display: block;
+}
+
+
+/*-----------------------------------------------------------*/
+
+nav ul li a:is(:link, :active, :visited).active 
+{
+    color: black;
+}
+
+
+/*-----------------------------------------------------------*/
+
+/* BODY SETTINGS */
+body{
+    
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75em;
+    border: 0.1875em solid steelblue;
+    box-shadow: 0 9px 18px 9px black;
+    margin: 0 auto;
+}
+
+
+/*SECTIONS SETTINGS*/
+
+
+section {
+    width: 51.25em;
+    float: right;
+    padding: 1.563em 1.875em;
+    margin-left: 1.250em;
+}
+
+section h3 {
+    color: red;
+}
+
+/* ASIDE SETTINGS */
+
+.aside1 {
+    float: left;
+    padding: 1.250em;
+    margin-top: 1.250em;
+    width: 16.188em;
+}
+
+.aside1 h2{
+    color: red;
+    margin-left: 1.250em;
+}
+
+.aside1 ul {
+    line-height: 2em;
+    font-weight: bold;
+    
+}
+
+.aside1 ul li a{
+    text-decoration: none;
+}
+
+/* LINK SETTINGS */
+
+a.class2{color: steelblue;}
+
+/*FOOTER SETTINGS*/
+footer{
+    background-color: steelblue;
+    padding: 0.125em;
+    text-align: center;
+    clear: both;
+    color: white;
+
+}
+
+
+/* MEDIA QUERIES */ 
+
+@media screen and (max-width: 1024px) 
+{
+    body 
+    {
+        width: 95%;
+    }
+
+    nav 
+    {
+        font-size: 90%;
+        
+    }
+
+    .aside1
+    {
+        
+        width: 25%;
+        font-size: 90%;
+        
+    }
+
+    section
+    {
+        width: 63%;
+        
+    }
+
+    
+
+}
