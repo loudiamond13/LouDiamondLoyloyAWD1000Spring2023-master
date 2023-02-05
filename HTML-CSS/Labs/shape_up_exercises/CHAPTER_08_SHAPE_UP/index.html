@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shape Up!</title>
   <link rel="shortcut icon" href="/images/favicon.ico" />
   <link rel="stylesheet" href="styles/normalize.css">
   <!--<link rel="stylesheet" href="styles/main.css">-->
   <link rel="stylesheet" href="styles/main_rwd.css">
+  <link rel="stylesheet" href="styles/slicknav.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
   <script defer src="js/activePage.js"></script>
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+      });
+  </script>
 
 </head>
 
@@ -22,7 +31,9 @@
       <h1>Shape Up!</h1>
       <h2>Find the best fit for you</h2>
     </header>
-    <nav>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
       <ul>
         <li>
           <a href="index.html">Home</a>
@@ -55,6 +66,7 @@
         </li>
       </ul>
     </nav>
+  
     <aside class="aside1">
         <h2>Additional resources</h2>
         <ul>
