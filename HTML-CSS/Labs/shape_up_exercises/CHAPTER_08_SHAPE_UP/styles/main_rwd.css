@@ -282,6 +282,25 @@ footer{
         color: lightsteelblue;
     }
 
+    #mobile_menu .subnav ul
+    {
+        padding: none;
+        
+        margin-left: 4.5em;
+        width: 20%;
+    }
+
+    #mobile_menu .subnav ul li 
+    {
+        margin: 0;
+    }
+
+    #mobile_menu .subnav ul li a:hover 
+    {
+        background-color: lightsteelblue;
+        color: steelblue;
+    }
+
     header h2 {
         font-size: 200%;
     }
