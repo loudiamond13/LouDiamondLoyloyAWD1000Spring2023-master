@@ -1,0 +1,383 @@
+/*CSS FOR STRENGTH INDEX HTML*/
+
+header img  
+{
+    float: left;
+    margin-right: 1.875em;
+    min-width: 4.375em;
+    max-width: 8.750em;
+}
+
+header h1, h2 
+{
+    margin: 0;
+    padding: 0;
+}
+
+header h1 
+{
+    
+     color: steelblue;
+     font-style: italic;
+     text-shadow: 2px 2px 2px;
+     margin-bottom: 0.625em;
+     font-size: 3em;
+}
+
+header h2 
+{
+    font-size: 1.7em;
+}
+
+header
+{
+    background-image: -webkit-linear-gradient(180deg, white, rgb(117, 184, 239));
+    background-image: -moz-linear-gradient(180deg, white, rgb(117, 184, 239));
+    background-image: -o-linear-gradient(180deg, white, rgb(117, 184, 239));
+    background-image: linear-gradient(180deg, white, rgb(117, 184, 239));
+    padding: 3.125em;
+   
+}
+
+/* the styles for the navigation menu */
+
+#nav_menu 
+{
+    display: flex;
+    flex-direction: column;
+    background-color: steelblue;
+    width: 100%;
+    font-weight: bold;
+}
+
+#nav_menu ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#nav_menu ul li a
+{
+    text-decoration: none;
+    color: white;
+    
+}
+
+#nav_menu ul li a:hover
+{
+    background-color:lightsteelblue;
+    display: block;
+    
+}
+
+#mobile_menu 
+{
+    display: none;
+}
+
+/*
+#nav_menu {
+	clear: left;
+    border-bottom: 2px solid steelblue;
+}
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 20%;                      
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+   
+}
+#nav_menu ul ul li {
+
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	background-color: steelblue;
+	color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#nav_menu ul li a.current {
+	color: black;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: lightsteelblue;
+}
+#nav_menu ul li:hover ul {
+	width: 100%;
+}
+
+*/
+
+/*-----------------------------------------------------------*/
+
+#nav_menu ul li a:is(:link, :active, :visited).active 
+{
+    color: black;
+}
+
+
+/*-----------------------------------------------------------*/
+
+/* BODY SETTINGS */
+body{
+    
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75em;
+    border: 0.1875em solid steelblue;
+    box-shadow: 0 9px 18px 9px black;
+    margin: 0 auto;
+}
+
+.section h3 
+{
+    color: red;
+    font-size: 1.5em;
+}
+
+/* MAIN SETTINGS FLEXBOX */
+
+.main 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 2;
+}
+
+.section 
+{
+    order: 1;
+    padding: 2em 1em 1em .5em;
+    margin: 0;
+}
+.section h2 
+{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/* ASIDE SETTINGS */
+
+.aside1 {
+    float: left;
+    padding: 1.250em;
+    margin-top: 1.250em;
+    width: 70%;
+    
+}
+
+.aside1 h2{
+    color: red;
+    margin-left: 1.250em;
+}
+
+.aside1 ul {
+    line-height: 2em;
+    font-weight: bold;
+    
+}
+
+.aside1 ul li a{
+    text-decoration: none;
+}
+
+
+
+/* LINK SETTINGS */
+
+a.class2{color: steelblue;}
+
+
+/*FOOTER SETTINGS*/
+footer{
+    background-color: steelblue;
+    padding: 0.125em;
+    text-align: center;
+    clear: both;
+    color: white;
+
+}
+
+
+
+
+/* MEDIA QUERIES */ 
+/* DESKTOP */
+@media only screen and (max-width: 1024px) 
+{
+    body 
+    {
+        width: 95%;
+        
+    }
+  
+    #nav_menu ul li
+    {
+      margin: -.5em;
+         
+    }
+
+
+    .aside1
+    {
+        
+        width: 28%;
+        margin-left: -1em;
+        margin-right: 2em;
+        
+    }
+
+    section
+    {
+        width: 64%;
+        margin-left: -5em;
+        margin-right: .3em;
+        
+    }
+
+    
+
+}
+
+/* TABLET */
+@media only screen and (max-width: 900px)
+{
+    body 
+    {
+        font-size: 90%;
+        box-shadow: none;
+    }
+
+    
+}
+
+
+/* CELLPHONE / MOBILE LANDSCAPE ORIENTATION */
+@media only screen and (max-width: 767px)
+{
+    #nav_menu 
+    {
+        display: none;
+    }
+    #mobile_menu
+    {
+        display: block;
+       
+        
+    }
+
+    #mobile_menu a 
+    {
+        background-color: steelblue;
+    }
+
+    #mobile_menu ul
+    {
+        background-color: steelblue;
+        
+    }
+
+    .slicknav_menu 
+    {
+        padding: 0.188em !important;
+        background-color: steelblue !important;
+    }
+
+    #mobile_menu a:hover, 
+    #mobile_menu a:focus 
+    {
+        color: lightsteelblue;
+    }
+
+    header h2 {
+        font-size: 200%;
+    }
+
+    .main 
+    {
+        padding: 1.5em;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .aside1 
+    {
+        
+        order: 1;
+        width: 100%;
+        margin-left: -2.5em;
+    }
+
+    footer 
+    {
+        order: 2;
+    }
+    .section 
+    {
+        order: 0;
+        
+        width: 95%;
+    }
+}
+
+/* MOBILE PHONE PORTRAIT */
+@media only screen and (max-width: 479px) 
+{
+    section p {
+	    font-size: 95%;
+    }
+
+    section 
+    {
+        margin: -1em;
+    }
+
+    .aside1 
+    {
+        width: 70%;
+    }
+
+    header h1
+    {
+        font-size: 230%;
+    }
+    header h2 
+    {
+        font-size: 150%;
+    }
+
+    header img 
+    {
+        width: 25%;
+        
+    }
+  
+}
