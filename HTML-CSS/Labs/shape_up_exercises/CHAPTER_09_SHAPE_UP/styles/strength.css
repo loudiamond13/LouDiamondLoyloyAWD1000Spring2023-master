@@ -43,11 +43,10 @@ header
 
 #nav_menu 
 {
-    display: flex;
-    flex-direction: column;
+    
     background-color: steelblue;
-    margin: 0;
-    padding: 0;
+   
+    padding: .5em;
     font-weight: bold;
    
 }
@@ -58,8 +57,9 @@ header
     text-align: center;
     list-style: none;
     display: flex;
-    flex-direction: row;
+    margin: 0;
     flex-basis: 100%;
+    padding: 0;
     
 }
 
@@ -68,12 +68,15 @@ header
     display: flex;
     justify-content: space-evenly;
     flex-basis: 20%;
+   
+   
 }
 
 #nav_menu ul li a
 {
     text-decoration: none;
     color: white;
+    text-align: center;
     
 }
 
@@ -81,6 +84,7 @@ header
 {
     background-color:lightsteelblue;
     display: block;
+    
     
 }
 
@@ -228,13 +232,18 @@ body{
 
 .aside1 ul li a{
     text-decoration: none;
+    color: steelblue;
+}
+
+.aside1 ul li a:hover,
+.aside1 ul li a:focus
+{
+    color: maroon;
 }
 
 
 
-/* LINK SETTINGS */
 
-a.class2{color: steelblue;}
 
 
 /*FOOTER SETTINGS*/
@@ -257,7 +266,7 @@ footer{
 
     header 
     {
-        font-size: 75%;
+        font-size: 70%;
     }
 
     body 
@@ -266,29 +275,20 @@ footer{
         
     }
   
-    #nav_menu ul li
+    main
     {
-      margin: -.5em;
-         
-    }
-
-
-    .aside1
-    {
-        
-        width: 28%;
-        margin-left: -1em;
-        margin-right: 2em;
+        display: flex;
+        margin-bottom: 1em;
+        margin-right: 1em;
         
     }
 
-    section
+
+    footer 
     {
-        width: 64%;
-        margin-left: -5em;
-        margin-right: .3em;
-        
+        font-size: 85%;
     }
+   
 
     
 
@@ -303,13 +303,26 @@ footer{
         box-shadow: none;
     }
 
-    
+    header 
+    {
+        font-size: 65%;
+    }
+    footer 
+    {
+        font-size: 80%;
+    }
+   
 }
 
 
 /* CELLPHONE / MOBILE LANDSCAPE ORIENTATION */
 @media only screen and (max-width: 767px)
 {
+
+    body 
+    {
+        font-size: 90%;
+    }
 
     header 
     {
@@ -356,37 +369,34 @@ footer{
 
     .main 
     {
-        padding: 1.5em;
+        margin: 1em;
         display: flex;
         flex-direction: column;
-       
+        flex-basis: 100%;
+        padding: 0;
     }
 
     .section
     {
         margin: 0 auto;
-        width: 100%;
+       
         order: 0;
     }
 
     .aside1 
     {
-        
         order: 1;
-        width: 100%;
+    
+        flex-basis: 100%;
        
     }
 
     footer 
     {
-        
+        font-size: 75%;
     }
-    .section 
-    {
-        order: 0;
-        
-        width: 95%;
-    }
+   
+
 }
 
 /* MOBILE PHONE PORTRAIT */
@@ -403,15 +413,6 @@ footer{
 	    font-size: 95%;
     }
 
-    section 
-    {
-        margin: -1em;
-    }
-
-    .aside1 
-    {
-        width: 70%;
-    }
 
     header h1
     {
