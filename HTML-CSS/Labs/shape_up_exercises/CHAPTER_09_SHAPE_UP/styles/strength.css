@@ -46,18 +46,29 @@ header
     display: flex;
     flex-direction: column;
     background-color: steelblue;
-    width: 100%;
+    margin: 0;
+    padding: 0;
     font-weight: bold;
+   
 }
 
 #nav_menu ul
 {
+   
+    text-align: center;
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-basis: 100%;
+    
 }
 
+#nav_menu ul li 
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 20%;
+}
 
 #nav_menu ul li a
 {
@@ -168,14 +179,17 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex: 2;
+    
+    flex-basis: 100%;
+
 }
 
 .section 
 {
+    flex-basis: 65%;
     order: 1;
-    padding: 2em 1em 1em .5em;
-    margin: 0;
+    /*padding: 2em 1em 1em .5em;*/
+    margin-top: 2em;
 }
 .section h2 
 {
@@ -183,24 +197,32 @@ body{
     font-size: 2em;
 }
 
+.section p 
+{
+    font-size: 1em;
+}
+
 /* ASIDE SETTINGS */
 
 .aside1 {
-    float: left;
-    padding: 1.250em;
-    margin-top: 1.250em;
-    width: 70%;
+    order: 0;
+    padding-top: 2em;
+    /*margin-top: 1.250em;*/
+   
+    flex-basis: 35%;
+    margin: 0;
     
 }
 
 .aside1 h2{
     color: red;
-    margin-left: 1.250em;
+    margin-left: 1em;
 }
 
 .aside1 ul {
-    line-height: 2em;
+    line-height: 1.5em;
     font-weight: bold;
+    font-size: 1em;
     
 }
 
@@ -220,7 +242,7 @@ footer{
     background-color: steelblue;
     padding: 0.125em;
     text-align: center;
-    clear: both;
+    
     color: white;
 
 }
@@ -232,6 +254,12 @@ footer{
 /* DESKTOP */
 @media only screen and (max-width: 1024px) 
 {
+
+    header 
+    {
+        font-size: 75%;
+    }
+
     body 
     {
         width: 95%;
@@ -282,6 +310,12 @@ footer{
 /* CELLPHONE / MOBILE LANDSCAPE ORIENTATION */
 @media only screen and (max-width: 767px)
 {
+
+    header 
+    {
+        font-size: 65%;
+    }
+
     #nav_menu 
     {
         display: none;
@@ -325,7 +359,14 @@ footer{
         padding: 1.5em;
         display: flex;
         flex-direction: column;
+       
+    }
+
+    .section
+    {
         margin: 0 auto;
+        width: 100%;
+        order: 0;
     }
 
     .aside1 
@@ -333,12 +374,12 @@ footer{
         
         order: 1;
         width: 100%;
-        margin-left: -2.5em;
+       
     }
 
     footer 
     {
-        order: 2;
+        
     }
     .section 
     {
@@ -351,6 +392,13 @@ footer{
 /* MOBILE PHONE PORTRAIT */
 @media only screen and (max-width: 479px) 
 {
+
+    header 
+    {
+        font-size: 50%;
+    }
+
+
     section p {
 	    font-size: 95%;
     }
