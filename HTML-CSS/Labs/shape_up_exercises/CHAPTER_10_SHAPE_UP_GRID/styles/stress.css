@@ -1,0 +1,588 @@
+/* This is my css for my stress index | shape up */
+
+
+/* HEADER SETTINGS */
+
+
+
+header img  
+{
+    float: left;
+    margin-right: 1.875em;
+    width: 100%;
+    max-width: 8.750em;
+    margin-left: 1em;
+    
+    
+}
+
+header h1, h2 
+{
+    margin: 0;
+    padding: 0;
+}
+
+header h1 
+{
+    
+     color: steelblue;
+     font-style: italic;
+     text-shadow: 2px 2px 2px;
+     
+     font-size: 2.7em;
+}
+header h2 
+{
+    font-size: 1.5em;
+}
+
+
+header
+{
+    background-image: -webkit-linear-gradient(180deg, white, rgb(117, 184, 239));
+    background-image: -moz-linear-gradient(180deg, white, rgb(117, 184, 239));
+    background-image: -o-linear-gradient(180deg, white, rgb(117, 184, 239));
+    background-image: linear-gradient(180deg, white, rgb(117, 184, 239));
+    
+    line-height: 1.5;
+    grid-area: header;
+    
+    /*border: 1px solid steelblue;*/
+}
+
+/* Nav Settings */
+#nav_menu
+ {
+    grid-area: nav;
+    border: 1em solid steelblue;
+    background-color: steelblue;
+  
+    align-self: center;
+  
+    font-size: 1.2em;
+    font-weight: bold;
+  
+   
+   
+   
+}
+
+#nav_menu ul
+{
+    display: grid;
+    margin: 0;
+    padding: 0;
+   
+    /*grid-template-columns: 
+        20% 20% 20% 20% 20%;
+    
+    
+     */
+    grid-template-columns: repeat(5, 1fr);
+    
+    list-style-type: none;
+
+
+}
+
+#nav_menu ul li
+{
+    border: 1px solid steelblue;
+    text-align: center;
+
+    
+
+}
+
+/*
+#nav_menu ul 
+{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+#nav_menu ul li
+{
+    display: inline-block;
+    
+   
+    
+    /*margin-left: 1.8em;
+    position: relative;
+    padding: 0em 1.875em 0em 1.875em;
+    display: inline-block;
+   
+}
+*/
+
+#nav_menu ul li a
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: .5em 0;
+    
+}
+
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus
+{
+    background-color: lightblue;
+    color: black;
+     
+    
+}
+
+
+#mobile_menu
+{
+    display: none;
+}
+
+/*---------------------------------------
+
+.subnav ul
+{
+    
+    background-color: steelblue;
+    text-align: center;
+    display: none;
+    position: absolute;
+    width: 108%;
+    left: -1.5625em;
+   
+    
+}
+
+.subnav ul li 
+{
+    
+    line-height: 2.5em;
+    margin-left: -3.125em;
+    margin-bottom: 0.9375em;
+    
+}
+
+.subnav ul li a 
+{
+    
+    color: white;
+    
+}
+
+
+.subnav:hover ul
+{
+    display: block;
+}
+
+
+-----------------------------------------------------------*/
+
+#nav_menu ul li a:is(:link, :active, :visited).active 
+{
+    color: black;
+}
+
+
+/*-----------------------------------------------------------*/
+
+/* BODY SETTINGS */
+body{
+    
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75em;
+    border: 0.1875em solid steelblue;
+    box-shadow: 0 9px 18px 9px black;
+    margin: 0 auto;
+ 
+    display: grid;
+    grid-template-areas: 
+        'header header header header'
+        'nav nav nav nav'
+        'aside section section section'
+        'footer footer footer footer';
+
+   
+    grid-template-columns: 
+        25% 25% 25% 25%;
+    grid-template-rows: 
+        20% 6% 68% 6% ;
+    
+    
+    
+}
+
+section 
+{
+    grid-area: section;
+   
+    padding: 0;
+    margin: 2em 1em 3em 5em;
+    
+}
+
+section ul li
+{
+    line-height: 1.5;
+}
+
+section h3
+        
+{
+    color: red;
+}
+
+
+/*SECTIONS SETTINGS
+
+
+section {
+    width: 51.25em;
+    float: right;
+    padding: 1.563em 1.875em;
+    margin-left: 1.250em;
+}
+
+section h3 {
+    color: red;
+}
+
+/* ASIDE SETTINGS */
+
+aside {
+    /*float: left;
+    padding: 1.250em;
+    margin-top: 1.250em;
+    width: 16.188em;*/
+    padding: 0;
+    margin: 2em 0 0 0;
+    grid-area: aside;
+}
+
+.aside1 h2{
+    color: red;
+    margin-left: 1em;
+}
+
+.aside1 ul {
+    line-height: 2em;
+    font-weight: bold;
+   
+   
+    
+}
+
+.aside1 ul li a{
+    text-decoration: none;
+}
+
+/* LINK SETTINGS */
+
+a.class2{color: steelblue;}
+
+/*FOOTER SETTINGS*/
+footer{
+    background-color: steelblue;
+    border: 2px solid steelblue;
+    text-align: center;
+   
+
+    color: white;
+    grid-area: footer;
+    font-size: .9em;
+   
+    
+}
+
+
+
+/* MEDIA QUERIES */ 
+/* DESKTOP */
+@media only screen and (max-width: 1024px) 
+{
+   body 
+   {
+    background-color: white;
+    width: 95%;
+    
+   }
+
+   header img 
+   {
+    max-width: 15%;
+
+   }
+
+   #nav_menu 
+   {
+    border: 3px solid steelblue;
+   }
+
+   .aside1 
+   {
+
+    width: 110%;
+   }
+
+   
+
+}
+
+  /*
+    #nav_menu ul li
+    {
+      margin: -.5em;
+         
+    }
+
+
+    .aside1
+    {
+        
+        width: 28%;
+        margin-left: -1em;
+        margin-right: 2em;
+        
+    }
+
+    section
+    {
+        width: 64%;
+        margin-left: -5em;
+        margin-right: .3em;
+        
+    }*/
+
+    
+
+
+
+ /*TABLET */
+@media only screen and (max-width: 900px)
+{
+    body 
+    {
+        font-size: 88%;
+        box-shadow: none;
+       
+     
+    }
+
+    header img 
+    {
+        align-self: center;
+        width: 13%;
+ 
+    }
+
+    #nav_menu 
+    {
+        border: 2px solid steelblue;
+    }
+    .aside1 
+    {
+        width: 110%;
+    }
+   
+}
+
+/*
+/* CELLPHONE LANDSCAPE ORIENTATION */
+@media only screen and (max-width: 767px)
+{
+    #nav_menu 
+    {
+        display: none;
+    }
+
+
+    #mobile_menu
+    {
+        display: block;
+        grid-area: nav;
+       
+        
+    }
+
+    #mobile_menu a 
+    {
+        background-color: steelblue;
+        
+    }
+
+    #mobile_menu ul
+    {
+        background-color: steelblue;
+       
+     
+    }
+
+    .slicknav_menu 
+    {
+        padding: 0.188em !important;
+        background-color: steelblue !important;
+        
+    }
+
+    #mobile_menu a:hover, 
+    #mobile_menu a:focus 
+    {
+        color: lightsteelblue;
+       
+    }
+
+
+    .body 
+    {
+        
+        font-size: 80%;
+     
+      
+
+        display: grid;
+        grid-template-areas: 
+            'header'
+            'nav'
+            'section'
+            'aside'
+            'footer';
+
+    
+        grid-template-columns:
+            1fr;
+
+        grid-template-rows: auto;
+            /*10%
+            5%
+            5%
+            50%
+            30%
+            5%;*/
+        
+           
+    }
+
+
+
+
+    section 
+    {
+        margin: 1.5em;
+      
+        
+    }
+    .aside1 
+    {
+        width: 100%;
+    }
+}
+/*
+    .aside1 
+    {
+        grid-area: aside;
+
+    }
+
+
+    footer 
+    {
+        font-size: ;
+
+    }
+
+*/
+
+    /*
+    header h2 {
+        font-size: 200%;
+    }
+
+    body 
+    {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .aside1 
+    {
+        order: 1;
+        width: 50%;
+    }
+
+    footer 
+    {
+        order: 2;
+    }
+    section 
+    {
+        order: 0;
+        margin-left: .2em;
+        width: 90%;
+    }
+    */
+
+
+
+@media only screen and (max-width: 479px) 
+{
+    body 
+    {
+        font-size: 75%;
+
+    }
+
+    header img 
+    {
+        width: 16%;
+        margin: 1em;
+    }
+
+
+
+}
+    
+
+
+
+
+
+
+
+
+
+/*section p {
+	    font-size: 95%;
+    }
+
+    section 
+    {
+        margin: -1em;
+    }
+
+    .aside1 
+    {
+        width: 70%;
+    }
+
+    header h1
+    {
+        font-size: 230%;
+    }
+    header h2 
+    {
+        font-size: 150%;
+    }
+
+    header img 
+    {
+        width: 25%;
+        
+    }
+  
+}*/
