@@ -276,7 +276,6 @@ header h1
 }*/
 
 #mobile_menu 
-
 {
     display: none;
 }
@@ -381,11 +380,7 @@ h1, h2, h3, p
 
 
 /*product_of_the_week Settings*/
-.product_of_the_week a
-{
-    color: orange;
-    font-weight: bold;
-}
+
 /* FOOTER SETTINGS */
 
 footer 
