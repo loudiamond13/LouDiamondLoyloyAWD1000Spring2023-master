@@ -1,0 +1,83 @@
+/*HOME PAGE*/
+
+#jumbotron 
+{
+    /* Image owned by Mike Swigunski of unplash.com*/
+    background-image: url('../img/medisla.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
+   
+    min-height: 60vh;
+    align-items: center;
+    color: antiquewhite;
+
+   
+   
+    
+  
+}
+
+#jumbotron h1 
+{
+    text-shadow: red 5px 5px;
+    font-weight: bold;
+    font-size: 7em;
+  
+}
+
+
+#jumbotron p 
+{
+    font-size: 1.5em;
+    text-shadow: black 2px .5px;
+    color: rgb(246, 246, 82);
+    z-index: 1;
+}
+
+/*
+#boxes 
+{
+    border-top: 5px solid black;
+}*/
+
+
+footer 
+{
+    bottom: 0;
+   
+}
+
+
+/*product page settings*/
+#prod
+{
+     /* Image owned by Jugoslocos of unplash.com*/
+    background-image: url('../img/medju.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+#prod h1 
+{
+    font-weight: 400;
+    text-shadow: 5px 1px orange;
+    color: greenyellow;
+    
+ 
+}
+
+#prod p
+{
+    font-weight: 400;
+    font-size: 1.8em;
+    text-shadow: 1.5px 1px brown;
+}
