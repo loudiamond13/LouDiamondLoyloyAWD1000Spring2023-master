@@ -33,26 +33,23 @@ let j = 0;                    // INITIALIZING ITERATION VARIABLE
 
 do {
 
-    // ASKS THE USER FOR A GRADE TO BE CONVERTED 
+    // ASKS THE USER FOR A GRADE TO BE CONVERTED (0-100)
     input = parseInt(prompt(`Enter number grade from ${lowestGrade} through ${HIGH_A} 
     \n Or enter 999 to end entries`, 999));
 
-    // CHECKS IF USER'S INPUT IS <0 OR >100
-    if ( input > HIGH_A || input < lowestGrade ) {
-       // CHECKS IF THE USER WANTS TO END THE ENTRIES AND PRINTS THE RESULTS
-        if ( input === 999 ) {
-            for ( i; i < inputGrade.length; i++ ) {
-                // PRINTS THE RESULTS
-                document.write( `<p>Grade ${inputGrade[i]} = ${letterGrade[i]}</p>` );
-            }
-            break;
-        }
-// if USER'S INPUT IS <0 OR >100 AND NOT  999 SKIP THE REST STATEMENTS 
-        else { continue; }
 
+
+       // CHECKS IF THE USER WANTS TO END THE ENTRIES AND PRINTS THE RESULTS
+    if ( input === 999 ) {
+        for ( i; i < inputGrade.length; i++ ) {
+            // PRINTS THE RESULTS
+            document.write( `<p>Grade ${inputGrade[i]} = ${letterGrade[i]}</p>` );
+        }
+        break; // ends the entries if user's input is 999 
+    }
 
         
-    }
+
 
 
     // 
@@ -84,11 +81,15 @@ do {
         inputGrade[j] = input;
         letterGrade[j] = 'F';
     }
-
+    // IGNORES THE INPUT IF INPUT IS NOT BETWEEN 0-100  
     else{continue;} ///  IGNORE THE REST
+    /* if the user's input is not valid, the  j-iteration will not iterate. 
+        it will not store the input value and will not point to the next
+        array index
+    */
 
 
-
-    j++ //ITERATES THE ARRAY INDEX
-    //  IF THE USER'S INPUT  is not a number keep going
+    j++;; //ITERATES THE ARRAY INDEX
+    
+    // IF INPUT IS VALID || IF THE USER'S INPUT  is not a number  keep going
 } while (isNaN(input) || input <= HIGH_A || input >= lowestGrade);
