@@ -8,7 +8,7 @@ const EXIT = 999; // EXIT CODE
 
 let fahrenheit = [0]; // ARRAY FOR FAHRENHEIT
 let celcius = [0]; // ARRAY LIST FOR CELCIUS
-let temp = 0; // TEMPORARY HOLDER FOR USERS INFO
+let temp = 0; // TEMPORARY HOLDER FOR USERS input
 let i = 0;          // ITERATION  VAR
 let j = 0;      // ITERATION VAR
 
@@ -29,7 +29,7 @@ do{
             }
 
 
-            break;
+            break; // ends the program if input is === 999
         }
 
 
