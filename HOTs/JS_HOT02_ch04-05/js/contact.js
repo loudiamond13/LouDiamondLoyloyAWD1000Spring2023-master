@@ -1,10 +1,13 @@
+
+/*I STILL NEED TO FINISH THIS, I AM SORRY, THIS IS NOT REALLY DONE YET*/
+
 const $ = selector => document.querySelector(selector)
 
 document.addEventListener("DOMContentLoaded", () => {
     
     /*DECLARING CONST AND VAR*/ 
     
-    const re = /^(?:\d{3}|\(\d{3}\))([-/.])\d{3}\1\d{4}$/;
+   // const re = /^(?:\d{3}|\(\d{3}\))([-/.])\d{3}\1\d{4}$/;
     let zip = 0; //initializing zip code var
     let lastName = ''  //initializing last name
     let firstName = '' //initializing first Name
