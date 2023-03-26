@@ -1,0 +1,6 @@
+<a class="btn btn-danger btn-lg" href="game.html" role="button"><i class="fa-solid fa-gamepad"></i> Play Now!</a>
+
+<p class="lead">Would you like to play?</p>
+
+
+class="border border-3 border-danger"
