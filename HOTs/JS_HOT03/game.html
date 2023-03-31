@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game | Rock Paper Scissor</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <!--navBar-->
+
+
+    <nav class="navbar navbar-expand-md bg-secondary navbar-dark py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-dark "><span
+                    class="rounded-pill border border-2 p-2 bg-danger text-decoration-underline border-dark"><strong>Rock
+                        Paper Scissor</strong></span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-light">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-light">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="game.html" class="nav-link active text-dark">Game</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-light">Contact</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--body / game section texts -->
+    <section>
+            <div class="text-center bg-dark px-sm-0">
+                <div class="container pt-3">
+
+
+                    <div class="h1 text-light bg-dark ">
+                        <i class="fa-regular fa-hand"></i>
+                        <i class="fa-regular fa-hand-scissors"></i>
+                        <i class="fa-solid fa-hand-fist"></i>
+                    </div>
+
+
+
+                    <h1 class="text-light">
+                        Are You Ready To Play?!
+                    </h1>
+                    <h3 class="text-light">
+                        If You Are, Lets Do It!
+                    </h3>
+                    <p class="text-light h5">
+                        This Game is Best of Five! You need to win Three rounds to win!
+                    </p>
+                    <p class="text-light h5">
+                        If you LOST THREE TIMES in a 5 round game,
+                        <span class="h4 text-danger bg-dark   
+                            border-danger border-bottom border-top">BETTER LUCK NEXT TIME
+                            <i class=" fa-solid fa-exclamation"></i>
+                            <i class=" fa-solid fa-exclamation"></i>
+                            <i class=" fa-solid fa-exclamation"></i>
+                        </span>
+                    </p>
+                    <br>
+                </div>
+
+            </div>
+
+            <!--user input/guess-->
+            <div class="text-sm-start bg-secondary text-light py-5">
+                <div class="container">
+                    <div class="d-md-flex align-items-center    
+                        justify-content-between ">
+                        <div>
+                            <form id="rpsPlayer" >
+                                
+                                    <div >
+                                       <h2 id="result" class=" pr-5">Select Your Choice!</h2><h4>Please Choose and enter your choice<span class="mt-3 bg-success"><br></span></h4><br>
+                                       
+                                                
+                                            <div>
+                                            <input type="radio" id="clientChoiceNum1" value="0" name="rps" checked>
+                                           <label class="m-2 h4" for="clientChoiceNum1">Rock</label>
+                                            </div>
+                                        
+                                            <div>
+                                            <input type="radio" id="clientChoiceNum2" value="1" name="rps">
+                                            <label class="m-2 h4" for="clientChoiceNum2">Scissor</label>
+                                            
+                                            </div>
+                                        
+                                            <div>
+                                            <input type="radio" id="clientChoiceNum3" value="2" name="rps">
+                                            <label class="m-2 h4" for="clientChoiceNum3">Paper</label>
+                                            </div>
+
+                                            <div>
+                                                <br>
+                                                
+                                            <!--<input class="clientChoice" type="number"  value="" min="0" max="2" placeholder="0?"><br><br>
+
+
+                                            <select name="choices" id="clientChoiceNum">
+                                                <option value="0">ROCK</option>
+                                                <option value="1">SCISSOR</option>
+                                                <option value="2">PAPER</option>
+                                            </select>-->
+
+                                            <input class= "btn btn-danger m-2" 
+                                            type="button" id="myBtn" value="Submit">
+                                            </div>
+                                    </div><br>
+                                    
+                               
+
+                               <input id="newGame" type="button" class="btn btn-danger" value="New Game">
+
+                            </form>
+                        </div><br>
+
+                   
+
+                        
+                    <div id="winnerImage" class="m-4"></div>
+
+                    <div class="text-start mr-lg-0 border border-3" id="resultLabels">
+    
+                        <br>
+                        <p class="text-center text-decoration-underline text-monospace">ROUND RESULTS</p>
+                            <label class="gameResult">MESSAGE:</label>
+
+                            <input type="text"
+                            name="msg"
+                            id="msg"
+                            class="resultTxtBox"
+                            disabled>
+
+                            <label class="gameResult">Round Winner:</label>
+                                
+                            <input 
+                            type="text" 
+                            name="roundWinner"
+                            id="roundWinner"
+                            class="resultTxtBox"
+                            disabled>
+
+                            <label class="gameResult">Round #:</label>
+
+                            <input type="text"
+                            name="roundN"
+                            id="roundN"
+                            class="resultTxtBox"
+                            disabled>
+
+                            
+
+
+                            <label class="gameResult">Your Score:</label>
+
+                            <input type="text"
+                            name="clientScore"
+                            id="clientScore"
+                            class="resultTxtBox text-danger"
+                            disabled>
+
+
+                            <label class="gameResult">You Picked:</label>
+
+                            <input type="text"
+                            name="yourChoice"
+                            id="yourChoice"
+                            class="resultTxtBox"
+                            disabled>
+
+                            <label class="gameResult">Computer Score: </label>
+
+                            <input type="text"
+                            name="computerScore"
+                            id="computerScore"
+                            class="resultTxtBox text-danger"
+                            disabled> 
+
+
+                            <label class="gameResult">Computer Picked: </label>
+
+                            <input type="text"
+                            name="computerGuess"
+                            id="computerGuess"
+                            class="resultTxtBox"
+                            disabled> <br>
+
+
+                            
+
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+                
+
+            <!--Game Rules / Reminder section-->
+        
+            <div class="text-sm-start bg-dark text-light p-5 text-center p-lg-0 ">
+                <div class="container">
+                    <div class="d-sm-flex align-items-center justify-content-between">
+                        <div>
+                            <h1 class="display-5">Game Rules / Reminder!</h1>
+                            <!--This text were copied and pasted from https://wrpsa.com/the-official-rules-of-rock-paper-scissors/-->
+                            <p class="lead">
+                                Although the game has a lot of complexity to it, the rules to play it are pretty simple.
+                                The game is played where players deliver hand signals that will represent the elements of the
+                                game; rock, paper and scissors. The outcome of the game is determined by 3 simple rules:
+                            </p>
+                            <ul>
+                                <li>Rock wins against scissors.</li>
+                                <li>Paper wins against rock.</li>
+                                <li>Scissors win against paper.</li>
+                            </ul>
+                            <p class="text-danger">Note: If players show the same things, the round will be draw and they can go
+                                again.</p>
+
+                        </div>
+                        <!--Photo taken from google images-->
+                        <img class="d-md-block d-none img-fluid w-50 px-3 p-1" src="images/rpsRULE.png"
+                            alt="mother-and-son-playing-rock-paper-scissors-game">
+                    </div>
+
+                </div>
+
+        </div>
+    </section>
+        <!--footer-->
+        <footer class="text-center text-light bg-secondary p-2 mt-0 mb-0 border-top border-danger">
+            <div class="container">
+
+                <p class="">Copyright 2023 &copy; Rock Paper Scissor.</p>
+
+            </div>
+        </footer>
+
+        <script src="js/rpsGame.js">
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
